@@ -8,7 +8,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   ]).then((data) => {
     const array = [];
     for (const idx of data) {
-      array.push({ status: idx.status, value: idx.value || idx.status });
+      array.push({ status: idx.status, value: idx.value || idx.reason });
     }
     return array;
   });
