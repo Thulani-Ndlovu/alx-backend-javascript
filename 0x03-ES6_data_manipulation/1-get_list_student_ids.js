@@ -1,6 +1,6 @@
 export default function getListStudentIds(array) {
   const ids = [];
-  if (array instanceof Array) {
+  if (!(array instanceof Array)) {
     return [];
   }
 
