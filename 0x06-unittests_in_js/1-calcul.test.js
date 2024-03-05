@@ -1,7 +1,7 @@
 const assert = require('assert');
 const calculateNumber = require('./1-calcul');
 
-describe('calculateNumber', () => {
+describe('SUM', () => {
   it('should return whole numbers from floating point inputs', () => {
     assert.strictEqual(calculateNumber("SUM", 2.0, 2.0), 4);
   });
@@ -58,7 +58,10 @@ describe('calculateNumber', () => {
     assert.strictEqual(calculateNumber("SUM", 999999999.5, 999999999.5), 2000000000);
   });
 
-  // Subtraction Tests
+});
+
+describe('SUBTRACT', () => {
+
 
   it('should return whole numbers from floating point inputs', () => {
     assert.strictEqual(calculateNumber("SUBTRACT", 2.0, 2.0), 0);
@@ -116,7 +119,9 @@ describe('calculateNumber', () => {
     assert.strictEqual(calculateNumber("SUBTRACT", 999999999.5, 999999999.5), 0);
   });
 
-  // DIVIDE TESTS
+});
+
+describe('DIVIDE', () => {
 
   it('should handle a denominator of zero', () => {
     assert.strictEqual(calculateNumber("DIVIDE", 5, 0), "Error");
