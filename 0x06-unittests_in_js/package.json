@@ -3,16 +3,20 @@
   "version": "1.0.0",
   "description": "0x06. Unittests in JS Project By Thulani Ndlovu\r ===============================================\r Project Learning Project\r 1. How to use Mocha to write a test suite\r 2. How to use different assertion libraries (Node or Chai)\r 3. How to present long test suites\r 4. When and how to use spies\r 5. When and how to use stubs\r 6. What are hooks and when to use them\r 7. Unit testing with Async functions\r 8. How to write integration tests with a small node server",
   "main": "index.js",
+  "type": "commonjs",
   "directories": {
     "test": "mocha"
   },
   "devDependencies": {
     "mocha": "^9.0.0"
-  }, 
+  },
   "scripts": {
     "test": "mocha"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.0"
+  }
 }
